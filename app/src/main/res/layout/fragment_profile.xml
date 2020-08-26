@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/startLine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/endLine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="20dp" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/userDeveloperGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="userGenderView,userAgeView, skillsTextView, userSkillsRecyclerView" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/userPersonGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="userGenderView,userAgeView"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <TextView
+            android:id="@+id/userRoleView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/colorGreen"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/endLine"
+            app:layout_constraintStart_toEndOf="@id/startLine"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userProfileImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userRoleView" />
+
+        <TextView
+            android:id="@+id/userUserNameView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@id/endLine"
+            app:layout_constraintStart_toEndOf="@id/startLine"
+            app:layout_constraintTop_toBottomOf="@id/userProfileImage" />
+
+        <TextView
+            android:id="@+id/userEmailAddressView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@id/endLine"
+            app:layout_constraintStart_toEndOf="@id/startLine"
+            app:layout_constraintTop_toBottomOf="@id/userUserNameView" />
+
+        <TextView
+            android:id="@+id/userPositionView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@id/endLine"
+            app:layout_constraintStart_toEndOf="@id/startLine"
+            app:layout_constraintTop_toBottomOf="@id/userEmailAddressView" />
+
+        <TextView
+            android:id="@+id/userGenderView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@id/endLine"
+            app:layout_constraintStart_toEndOf="@id/startLine"
+            app:layout_constraintTop_toBottomOf="@id/userPositionView" />
+
+        <TextView
+            android:id="@+id/userAgeView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@id/endLine"
+            app:layout_constraintStart_toEndOf="@id/startLine"
+            app:layout_constraintTop_toBottomOf="@id/userGenderView" />
+
+        <TextView
+            android:id="@+id/skillsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/skills"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/userAgeView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/userSkillsRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@id/signOutBtn"
+            app:layout_constraintEnd_toStartOf="@id/endLine"
+            app:layout_constraintStart_toEndOf="@id/startLine"
+            app:layout_constraintTop_toBottomOf="@id/skillsTextView" />
+
+        <View
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toStartOf="@id/endLine"
+            app:layout_constraintStart_toEndOf="@id/startLine"
+            app:layout_constraintTop_toBottomOf="@id/userSkillsRecyclerView"
+            android:background="@color/transparentColorGray"
+            android:id="@+id/lineView"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+        <Button
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/lineView"
+            android:id="@+id/signOutBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/button_background"
+            android:text="@string/sign_out"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/endLine"
+            app:layout_constraintStart_toEndOf="@id/startLine" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

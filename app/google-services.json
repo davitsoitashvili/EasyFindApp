@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "962274564644",
+    "firebase_url": "https://easyfindapp-bd728.firebaseio.com",
+    "project_id": "easyfindapp-bd728",
+    "storage_bucket": "easyfindapp-bd728.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962274564644:android:22393c70c1134c270916b1",
+        "android_client_info": {
+          "package_name": "com.example.easyfindapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962274564644-rbaqnv6r49sq4ir40poq1s02uo3lu964.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdk4y036L-VamnGf_ueOOj_1Qr1lCGDOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962274564644-rbaqnv6r49sq4ir40poq1s02uo3lu964.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

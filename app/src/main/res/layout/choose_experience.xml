@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:background="@drawable/error_dialog_layout_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/entryId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/entryClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_check"
+            android:visibility="invisible" />
+        <TextView
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/entry_level"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/intermediateId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/intermediateClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_check"
+            android:visibility="invisible" />
+
+        <TextView
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/intermediate"
+            android:textColor="@android:color/black"
+            tools:ignore="RtlSymmetry" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/expertId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/expertClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_check"
+            android:visibility="invisible" />
+
+        <TextView
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:text="Expert"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/colorBlack"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <Button
+        android:id="@+id/saveExperience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_background"
+        android:text="@string/save"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+</LinearLayout>

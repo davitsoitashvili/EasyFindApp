@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:id="@+id/recyclerSkillView"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:drawableStart="@mipmap/ic_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="RtlSymmetry" />
+</LinearLayout>
